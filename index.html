@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Buildings</title>
+		<script type="module" crossorigin src="./assets/index-Brll7m-A.js"></script>
+		<link rel="stylesheet" crossorigin href="./assets/index-DTvGgsyG.css">
+	</head>
+	<body>
+		<header class="site-header">
+			<div class="container">
+				<div class="site-header__content">
+					<a href="/">
+						<img
+							src="data:image/png;base64,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"
+							alt="Logo"
+							width="116"
+							height="34"
+					/></a>
+					<nav>
+						<div class="menu-hamburger">
+							<span class="menu-hamburger__line"></span>
+							<span class="menu-hamburger__line"></span>
+							<span class="menu-hamburger__line"></span>
+						</div>
+						<ul class="menu header-menu">
+							<li>
+								<a
+									href="/"
+									class="menu__link"
+									>Home</a
+								>
+							</li>
+							<li>
+								<a
+									href="#"
+									class="menu__link"
+									>About</a
+								>
+							</li>
+							<li>
+								<a
+									href="#"
+									class="menu__link"
+									>Features</a
+								>
+							</li>
+							<li>
+								<a
+									href="#"
+									class="menu__link"
+									>Feedback</a
+								>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<section class="promo">
+			<img
+				src="./assets/building_1-ClfJteQ1.jpeg"
+				alt="Building 1"
+				class="promo__image"
+			/>
+			<div class="container">
+				<div class="promo__content">
+					<h1 class="promo__title">From Concept to Creation</h1>
+					<h2 class="promo__subtitle">Crafting Spaces for Life</h2>
+					<ul class="about">
+						<li class="about__item">
+							<span class="accent">500+</span> Satisfied Clients
+						</li>
+						<li class="about__item">
+							<span class="accent">100%</span> Satisfaction Guarantee
+						</li>
+
+						<li class="about__item">
+							over <span class="accent">$150,000</span> total income
+						</li>
+					</ul>
+					<button class="btn promo__btn">Order</button>
+				</div>
+			</div>
+		</section>
+		<section class="features">
+			<div class="features__image-wrapper">
+				<img
+					src="./assets/building_2-ByGVN9Po.jpeg"
+					alt="Building 2"
+					class="features__image"
+				/>
+			</div>
+			<div class="features__content">
+				<ul class="features__list">
+					<li class="features__item">
+						A track record of successfully serving a diverse clientele
+					</li>
+					<li class="features__item">
+						Include positive feedback from past clients to build
+						credibility and trust with potential customers.
+					</li>
+					<li class="features__item">
+						Provide articles on industry trends, building tips, or company
+						updates to engage visitors and establish thought leadership in
+						the construction field.
+					</li>
+					<li class="features__item">
+						A track record of successfully serving a diverse clientele
+					</li>
+				</ul>
+				<button class="btn features__btn">Order</button>
+			</div>
+			<div class="features__image-wrapper">
+				<img
+					src="./assets/building_3-BhjoCshM.jpeg"
+					alt="Building 3"
+					class="features__image"
+				/>
+			</div>
+		</section>
+		<section class="feedback">
+			<div class="container">
+				<div class="feedback__overflow-container">
+					<div class="feedback__form-container">
+						<img
+							class="feedback__image"
+							src="./assets/woman-B1Bq51D3.png"
+							alt=""
+						/>
+						<form class="feedback-form">
+							<h2 class="feedback__title">Place <br />Your Order</h2>
+							<input
+								class="feedback-form__input"
+								name="name"
+								id="name"
+								placeholder="Name"
+							/>
+							<input
+								class="feedback-form__input"
+								name="email"
+								id="email"
+								placeholder="Email"
+							/>
+
+							<label>
+								<input
+									type="checkbox"
+									name="privacy-accepted"
+									required
+									class="feedback-form__checkbox"
+								/>
+								<span class="checkbox-text">I accept Privacy policy</span>
+							</label>
+							<button class="btn feedback__btn">Submit Form</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="site-footer">
+			<nav>
+				<ul class="menu footer-menu">
+					<li>
+						<a
+							href="/"
+							class="menu__link footer-menu__link"
+							>Home</a
+						>
+					</li>
+					<li>
+						<a
+							href="#"
+							class="menu__link footer-menu__link"
+							>About</a
+						>
+					</li>
+					<li>
+						<a
+							href="#"
+							class="menu__link footer-menu__link"
+							>Features</a
+						>
+					</li>
+					<li>
+						<a
+							href="#"
+							class="menu__link footer-menu__link"
+							>Feedback</a
+						>
+					</li>
+				</ul>
+			</nav>
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="footer-bottom__content">
+						<div class="footer-left">
+							<img
+								src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHQAAAAiCAYAAACOTf3NAAAAAXNSR0IArs4c6QAACHxJREFUaEPtm2tsFEUcwOe1R1UERWN8EMRANCZ+E4JiCG028YMxKAENaQJItKClraU+UeS24rst5SwFc8ZX/QAqVUwwfvK6Go2JkfhNiVGjRo0SNRo1RqOs+5/Xze3u7G3X49XchXJ389rd+c3/OXMYNV9TagbwlHqa5sOgJtAptgiaQKc6ULp+YB+lBFEHIUoxohQhyoh4dzDChCCHIoQdWQdtmWpr6Qfj8DbVcWA8TND4/iU37Zlic3pcHycmoWzDQKABMowIh6HAwrv5nSDCgUfLq9/j9dX+mKH2/YubQBu5AmJAC7cNBoSRyrR//lqJZsKl+H/8NbP6URaYtapRpEz2EW8z+T/6798rKSNlQoL28SbQRvKMO0WFzsGAOqTyZ6nPRbcMtDKGkPhjiLWozwgxymQ5kuXGd2gLfVoQQqqvHOdA2zp/mf9cB3VImbCgfXxRU0IbSTQmoS3dQwGluPLHjj6XrB8qMhZ4zCGIOVj8sdp3sKvxcmFLeT8Ayd9Fu/1L1uLl74x1EAeVKcHtLy9afcLb0CAIWjHG/mQnPm+/yV7HbB8DekqPAPr7cJ/LbgWgyNMwwRGKAFWgBNg4QCh3jH6vXbUWL39vrINSVCYUt7+88MQBCgBgcqLwgiAohuWerMscGeTt11Cgp/VuDwjDld8GN7mFzqFiCFMAlSA5IHCCopLJ25iSGZFc2X7fFWvwivcBKC5TjNr3WIAGQTCR8GBKSt7OIzH1JioEEMg2Psa4TbWXoPn9YIwzA4X2xphe2Le/3j383/rYzU3ftD2gDFd+HdjktnQNFcNwQ6hchn3HwT5xCHIc5IGkcskrEE/YWFDLyBPgCSIMe4UCvCNoJ8sxemWRAMoYKhOE04CqyYVn5NKBEAIJ4lKUZ3LrTZYNaARM22QW03EHevodAJRUfnm81z21Z7jIHGlDGfYOP3Q7X2EXDeycCAG3guR+0tWpF8UVe8qBAupff7Muv+6dFwKltl9asBrf+MFYB6G4jI+kSqgGakqFqcZCuDWSVA9YvXo5NjSLaQADzMkFdMad2wPGSOXnx3rd6b3DxdC54So3lEjv8IMC6LzBnRPUEUA/7qwCXbz36UA5QxPLqkCXv/tCwFU0w2jv5f8PqJQWUH/K3k1KBdaDaqs/aYGecfcwTH7lp4d73Rl9w0VaqLGhvrCh3Fa2cpVLsc8K0gsGqZVeLQUVXRAZIuaQVoCJCeJAVx0c60Aon4Qado1LcNSm2Rwb0x7aVGaaVzoZoOoe5DWVL5Aq2bLP0iTtIBexzWGr8cBjq/vMe4a5Df0RgN4JKhd5jgPpPenkRJyh5HKRDuT9dPgiLtUIoIaTElO50pmySm8aGFWX5PjUAyrvCbxhZePBgdP2PgSVCNQwIcrhU31qnKioxxy9nrrnGNCzNu/gNvTwth531t2lIi0IGxqqWD+UNF84QFJqhRr1uIRCrlaXc6C6PJRoD6SzgUCVyo1NkumRJk2iASZJuhO93HpOUeSaURBqzKR7VeGQXphpC9J0sKSjqBeNFejZ9wugP/T3uLPuLRVZQXmu2Pt6cze3oZfu2qWdoo/W3aoXRdvrzwRKMt+8ep0uX3XwRe3g5JFQefNKa76NEAKgVhWWRQot6jovUNUvFprY7iUtFLJ5xuZiNJ8fpFeFRDEJPeeBUkAornzv9bhnbykVQQJVePLlXRs50Mue2q2Bfrh2gx7DPfBsoGzoG+5NRwNoTdgCoJNiu2MJNK+KN/pZY97ook0Lq9RqjwPdWoLQo/Ld1h73nK0AVMSh0snxCeNxKDg53MsNd2a8UIpFHKqzSjxu5SoX4tBQ26o4slE2tCZGjULNCDTJ/uaRtMTwKuq8pcEJfbt+cNRsdjFhLGuSIgb0XK/EVe63W7rdc/tHiozW5nJ1QiHVSeJJBpFgkLZT3VQelVvHSUmzhUl2K4tanYzqtI6XZnsT7KEZMYFt5JDNwnqOGTcj0bjrvP4S32355r5u9/xtI8VwI1rmcpHPpbDAHSEehsj41BepQV6nwxbILEE5f+Gqt9dAoDq/GrWHx0lCE5McGeyhXjz1kvm5gF6w7Uketny9udud/fAIt6Eiy0O8Q923cRt6+fPlCQZq18HovRs79KK45q3ntQ19dfGahtlQi4SCPVUxXtQOpXmWR0tCE/O8GYBmzg/nAjr7IQH0q3u73TmPKgkliBaQd2ijcIoWjJUnGBNA372hCvTaynPQl0vu+JVrjyXQGtWaxbNMShum5V1TxrTa0IzhzNEFOueRkYA4uPLlXV3u3MdHi7S6H+pTRnxwgByKW1Xqj+/GcHUr4lMFNDyqoh0hM+xooMq1pv9s3qDpkdYJW9JsaDTO1PcR9bojYUbamLaM11LT4UtbcFYv98LHRvh+6BcAdGC06EigNRkhwyGqLa86Q7ZNpjxA5c2aC8QMX9IcH+hq7tTAdzN7A3U6ER+N8yR07pjYYsCEurTr8S055eyY2R/Dl1HJgphjlCtsmfvETkgOVD7v63LnD43K5Hz1xEFaClBtZEMb22sSQKP7oSYIeFiwm9b9xYg01rQ391oj+546cxMdP5Kii13bdr0M/eC5oinDxGezxa7mXMdm/qIBAfSzTV3u/OFRHYeqTe7oCQR9JEXmeAEmIeawYGKq37MCta6IZkXqDMSAzhvaGVBKKp/2drrQ87Ldu2sOisGhr5aEw1/6IBlLn/G9C1f7WXZbmtzyzUAM6PztIKGkwv4p3IBmiEHlm/FBftQVsl3ku+2W6LTCinrbZ/kep9krBvTiHaM89FAHqtMOSnP1SsXGdbRdlpM3aScWmmjyzUAM6CWlXftgD5OfmNc/g4j/JILXUfPkPPxUQvzUAfpmeZEjaNx2SCxL/2ab+Axkm/nmzJ00M9AEetKgynaj/wE3Er9ffkKHjQAAAABJRU5ErkJggg=="
+								alt="Logo"
+								width="116"
+								height="34"
+							/>
+							<span class="footer-bottom__text">© 2024, Copyright.</span>
+						</div>
+						<div class="footer-middle">
+							<ul class="socials">
+								<li>
+									<a href="#"
+										><svg
+											width="32"
+											height="32"
+											viewBox="0 0 32 32"
+											fill="none"
+											class="socials__icon"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<g clip-path="url(#clip0_65_1272)">
+												<path
+													d="M21.332 5.33203H10.6654C7.71985 5.33203 5.33203 7.71985 5.33203 10.6654V21.332C5.33203 24.2775 7.71985 26.6654 10.6654 26.6654H21.332C24.2775 26.6654 26.6654 24.2775 26.6654 21.332V10.6654C26.6654 7.71985 24.2775 5.33203 21.332 5.33203Z"
+													stroke="#D5C9BE"
+													stroke-width="2"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												/>
+												<path
+													d="M16 20C18.2091 20 20 18.2091 20 16C20 13.7909 18.2091 12 16 12C13.7909 12 12 13.7909 12 16C12 18.2091 13.7909 20 16 20Z"
+													stroke="#D5C9BE"
+													stroke-width="2"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												/>
+												<path
+													d="M22 10V10.001"
+													stroke="#D5C9BE"
+													stroke-width="2"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												/>
+											</g>
+											<defs>
+												<clipPath id="clip0_65_1272">
+													<rect
+														width="32"
+														height="32"
+														fill="white"
+													/>
+												</clipPath>
+											</defs>
+										</svg>
+										<span class="socials__text">Instagram</span></a
+									>
+								</li>
+								<li>
+									<a href="#"
+										><svg
+											width="32"
+											height="32"
+											viewBox="0 0 32 32"
+											fill="none"
+											class="socials__icon"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<g clip-path="url(#clip0_65_1273)">
+												<path
+													d="M12.0013 15.9987C10.9465 15.9987 9.91533 16.3115 9.03826 16.8975C8.1612 17.4836 7.47761 18.3165 7.07395 19.2911C6.67028 20.2656 6.56466 21.3379 6.77045 22.3725C6.97624 23.4071 7.48419 24.3574 8.23007 25.1033C8.97595 25.8491 9.92626 26.3571 10.9608 26.5629C11.9954 26.7687 13.0677 26.6631 14.0423 26.2594C15.0168 25.8557 15.8498 25.1721 16.4358 24.2951C17.0218 23.418 17.3346 22.3869 17.3346 21.332V5.33203C17.3346 7.10014 18.037 8.79583 19.2873 10.0461C20.5375 11.2963 22.2332 11.9987 24.0013 11.9987"
+													stroke="#D5C9BE"
+													stroke-width="2"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												/>
+											</g>
+											<defs>
+												<clipPath id="clip0_65_1273">
+													<rect
+														width="32"
+														height="32"
+														fill="white"
+													/>
+												</clipPath>
+											</defs></svg
+										><span class="socials__text">Tiktok</span></a
+									>
+								</li>
+								<li>
+									<a href="#"
+										><svg
+											width="32"
+											height="32"
+											viewBox="0 0 32 32"
+											fill="none"
+											class="socials__icon"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<g clip-path="url(#clip0_65_1274)">
+												<path
+													d="M23.9987 5.33203H7.9987C6.52594 5.33203 5.33203 6.52594 5.33203 7.9987V23.9987C5.33203 25.4715 6.52594 26.6654 7.9987 26.6654H23.9987C25.4715 26.6654 26.6654 25.4715 26.6654 23.9987V7.9987C26.6654 6.52594 25.4715 5.33203 23.9987 5.33203Z"
+													stroke="#D5C9BE"
+													stroke-width="2"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												/>
+												<path
+													d="M10.668 14.668V21.3346"
+													stroke="#D5C9BE"
+													stroke-width="2"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												/>
+												<path
+													d="M10.668 10.668V10.6813"
+													stroke="#D5C9BE"
+													stroke-width="2"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												/>
+												<path
+													d="M16 21.3346V14.668"
+													stroke="#D5C9BE"
+													stroke-width="2"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												/>
+												<path
+													d="M21.3333 21.3346V17.3346C21.3333 16.6274 21.0524 15.9491 20.5523 15.449C20.0522 14.9489 19.3739 14.668 18.6667 14.668C17.9594 14.668 17.2811 14.9489 16.781 15.449C16.281 15.9491 16 16.6274 16 17.3346"
+													stroke="#D5C9BE"
+													stroke-width="2"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												/>
+											</g>
+											<defs>
+												<clipPath id="clip0_65_1274">
+													<rect
+														width="32"
+														height="32"
+														fill="white"
+													/>
+												</clipPath>
+											</defs></svg
+										><span class="socials__text">Linkedin</span></a
+									>
+								</li>
+								<li>
+									<a href="#"
+										><svg
+											width="32"
+											height="32"
+											viewBox="0 0 32 32"
+											fill="none"
+											class="socials__icon"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<g clip-path="url(#clip0_65_1275)">
+												<path
+													d="M9.33203 13.3333V18.6667H13.332V28H18.6654V18.6667H22.6654L23.9987 13.3333H18.6654V10.6667C18.6654 10.313 18.8058 9.97391 19.0559 9.72386C19.3059 9.47381 19.6451 9.33333 19.9987 9.33333H23.9987V4H19.9987C18.2306 4 16.5349 4.70238 15.2847 5.95262C14.0344 7.20286 13.332 8.89856 13.332 10.6667V13.3333H9.33203Z"
+													stroke="#D5C9BE"
+													stroke-width="2"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												/>
+											</g>
+											<defs>
+												<clipPath id="clip0_65_1275">
+													<rect
+														width="32"
+														height="32"
+														fill="white"
+													/>
+												</clipPath>
+											</defs></svg
+										><span class="socials__text">Facebook</span></a
+									>
+								</li>
+								<li>
+									<a href="#"
+										><svg
+											width="32"
+											height="32"
+											viewBox="0 0 32 32"
+											fill="none"
+											class="socials__icon"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<g clip-path="url(#clip0_65_1276)">
+												<path
+													d="M20 13.332L14.6667 18.6654L22.6667 26.6654L28 5.33203L4 14.6654L9.33333 17.332L12 25.332L16 19.9987"
+													stroke="#D5C9BE"
+													stroke-width="2"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												/>
+											</g>
+											<defs>
+												<clipPath id="clip0_65_1276">
+													<rect
+														width="32"
+														height="32"
+														fill="white"
+													/>
+												</clipPath>
+											</defs></svg
+										><span class="socials__text">Telegram</span></a
+									>
+								</li>
+								<li>
+									<a href="#"
+										><svg
+											width="32"
+											height="32"
+											viewBox="0 0 32 32"
+											fill="none"
+											class="socials__icon"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<g clip-path="url(#clip0_65_1277)">
+												<path
+													d="M22.6667 6.66797H9.33333C6.38781 6.66797 4 9.05578 4 12.0013V20.0013C4 22.9468 6.38781 25.3346 9.33333 25.3346H22.6667C25.6122 25.3346 28 22.9468 28 20.0013V12.0013C28 9.05578 25.6122 6.66797 22.6667 6.66797Z"
+													stroke="#D5C9BE"
+													stroke-width="2"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												/>
+												<path
+													d="M13.332 12L19.9987 16L13.332 20V12Z"
+													stroke="#D5C9BE"
+													stroke-width="2"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												/>
+											</g>
+											<defs>
+												<clipPath id="clip0_65_1277">
+													<rect
+														width="32"
+														height="32"
+														fill="white"
+													/>
+												</clipPath>
+											</defs></svg
+										><span class="socials__text">Youtube</span></a
+									>
+								</li>
+							</ul>
+							<a
+								href="#"
+								class="footer-bottom__link footer-middle__link"
+								>Privacy policy</a
+							>
+						</div>
+						<div class="footer-right">
+							<button class="btn footer__btn">Order</button>
+
+							<a
+								href="#"
+								class="footer-bottom__link footer-right__link"
+								>Terms of Use</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
